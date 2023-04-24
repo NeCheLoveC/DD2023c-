@@ -23,7 +23,7 @@ namespace DDConsole
                     Console.WriteLine(a.Value);
                     addWord(a.Value);
                 }
-                dictionary = dictionary.OrderBy(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
+                dictionary = dictionary.OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
                 FileStream stream = File.Create("result.txt");
                 writeDictionaryIntoFile(stream);
             }
