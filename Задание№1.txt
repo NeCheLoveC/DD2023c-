@@ -1,0 +1,57 @@
+Диалект - postgresql.
+Таблицы 
+{
+1. employee
+2. departments
+}
+Напишите запросы, которые выведут:
+1.	Сотрудника с максимальной заработной платой.
+select * from employee
+where salary = (select max("employee"."salary") from employee)
+2.	Вывести одно число: максимальную длину цепочки руководителей по таблице сотрудников (вычислить глубину дерева).
+CREATE FUNCTION get_employee_depth(emp_id bigint) RETURNS integer AS 
+$BODY$
+	DECLARE parent_id bigint;
+ 	BEGIN
+		parent_id = (select e.chief_id from employee e where e."id" = emp_id);
+		if parent_id IS NULL then
+			return 1;
+		else
+			return get_employee_depth(parent_id) + 1;
+		end if;
+	END;
+$BODY$ 
+LANGUAGE plpgsql;
+
+
+CREATE FUNCTION get_max_depth() RETURNS integer AS 
+$BODY$
+	DECLARE
+	emp record;
+	current_max_depth int = 0;
+	dept_for_emp int = 0;
+	BEGIN
+		for emp in select * from "employee" as emps where not exists 
+		(
+			select * from "employee" where chief_id = emps."id"
+		)
+		LOOP
+			dept_for_emp = get_employee_depth(emp."id");
+			if (current_max_depth < dept_for_emp) then
+				current_max_depth = dept_for_emp;
+			end if;
+		END LOOP;
+		return current_max_depth;
+	END;
+$BODY$ 
+LANGUAGE plpgsql;
+
+select get_max_depth()
+3.	Отдел, с максимальной суммарной зарплатой сотрудников. 
+WITH query_1 AS (select d.id,d.name,sum(e.salary)
+from departments d join employee e on e.department_id = d."id"
+GROUP BY d.id,d.name)
+
+select * from query_1 q where q.sum = (select max(sum) from query_1)
+4.	Сотрудника, чье имя начинается на «Р» и заканчивается на «н».
+select * from employee LIKE 'Р%н'
