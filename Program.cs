@@ -10,12 +10,16 @@ namespace DDConsole
     class Program
     {
         private static Dictionary<String, long> dictionary = new Dictionary<string, long>();
-        
+
+        private static String PATH = Directory.GetCurrentDirectory();
+        private static String FILE_NAME = "text.txt";
+
         static void Main(string[] args)
         {
-            if (System.IO.File.Exists("C:\\Users\\prots\\source\\repos\\DDConsole\\DDConsole\\text.txt"))
+            String fullPathName = PATH + "\\" + FILE_NAME;
+            if (System.IO.File.Exists(fullPathName))
             {
-                String text = File.ReadAllText("C:\\Users\\prots\\source\\repos\\DDConsole\\DDConsole\\text.txt");
+                String text = File.ReadAllText(fullPathName);
                 Regex regex = new Regex(@"\b\w+\b");
                 MatchCollection matches = regex.Matches(text);
                 foreach (Match a in matches)
@@ -30,7 +34,7 @@ namespace DDConsole
             else
             {
                 Console.WriteLine("Файл не найден... Для выполнения программы необходим файл в " +
-                    "корневой папке проекта - 'text.txt'");
+                    "корневой папке проекта (" + PATH + ")" + " - text.txt");
 
             }
             
