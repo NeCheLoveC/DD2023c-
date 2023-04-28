@@ -2,7 +2,7 @@
 Таблицы 
 {
 1. employee
-2. departments
+2. department
 }
 Напишите запросы, которые выведут:
 1.	Сотрудника с максимальной заработной платой.
@@ -49,7 +49,7 @@ LANGUAGE plpgsql;
 select get_max_depth()
 3.	Отдел, с максимальной суммарной зарплатой сотрудников. 
 WITH query_1 AS (select d.id,d.name,sum(e.salary)
-from departments d join employee e on e.department_id = d."id"
+from department d join employee e on e.department_id = d."id"
 GROUP BY d.id,d.name)
 
 select * from query_1 q where q.sum = (select max(sum) from query_1)
