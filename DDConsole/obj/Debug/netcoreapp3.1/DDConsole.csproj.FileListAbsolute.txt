@@ -4,7 +4,6 @@ C:\Users\prots\source\repos\DDConsole\DDConsole\bin\Debug\netcoreapp3.1\DDConsol
 C:\Users\prots\source\repos\DDConsole\DDConsole\bin\Debug\netcoreapp3.1\DDConsole.runtimeconfig.dev.json
 C:\Users\prots\source\repos\DDConsole\DDConsole\bin\Debug\netcoreapp3.1\DDConsole.dll
 C:\Users\prots\source\repos\DDConsole\DDConsole\bin\Debug\netcoreapp3.1\DDConsole.pdb
-C:\Users\prots\source\repos\DDConsole\DDConsole\obj\Debug\netcoreapp3.1\DDConsole.csprojAssemblyReference.cache
 C:\Users\prots\source\repos\DDConsole\DDConsole\obj\Debug\netcoreapp3.1\DDConsole.AssemblyInfoInputs.cache
 C:\Users\prots\source\repos\DDConsole\DDConsole\obj\Debug\netcoreapp3.1\DDConsole.AssemblyInfo.cs
 C:\Users\prots\source\repos\DDConsole\DDConsole\obj\Debug\netcoreapp3.1\DDConsole.csproj.CoreCompileInputs.cache

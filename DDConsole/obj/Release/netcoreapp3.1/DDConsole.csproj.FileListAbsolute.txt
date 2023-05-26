@@ -1,0 +1,12 @@
+C:\Users\prots\source\repos\DDConsole\DDConsole\bin\Release\netcoreapp3.1\DDConsole.exe
+C:\Users\prots\source\repos\DDConsole\DDConsole\bin\Release\netcoreapp3.1\DDConsole.deps.json
+C:\Users\prots\source\repos\DDConsole\DDConsole\bin\Release\netcoreapp3.1\DDConsole.runtimeconfig.json
+C:\Users\prots\source\repos\DDConsole\DDConsole\bin\Release\netcoreapp3.1\DDConsole.runtimeconfig.dev.json
+C:\Users\prots\source\repos\DDConsole\DDConsole\bin\Release\netcoreapp3.1\DDConsole.dll
+C:\Users\prots\source\repos\DDConsole\DDConsole\bin\Release\netcoreapp3.1\DDConsole.pdb
+C:\Users\prots\source\repos\DDConsole\DDConsole\obj\Release\netcoreapp3.1\DDConsole.AssemblyInfoInputs.cache
+C:\Users\prots\source\repos\DDConsole\DDConsole\obj\Release\netcoreapp3.1\DDConsole.AssemblyInfo.cs
+C:\Users\prots\source\repos\DDConsole\DDConsole\obj\Release\netcoreapp3.1\DDConsole.csproj.CoreCompileInputs.cache
+C:\Users\prots\source\repos\DDConsole\DDConsole\obj\Release\netcoreapp3.1\DDConsole.dll
+C:\Users\prots\source\repos\DDConsole\DDConsole\obj\Release\netcoreapp3.1\DDConsole.pdb
+C:\Users\prots\source\repos\DDConsole\DDConsole\obj\Release\netcoreapp3.1\DDConsole.genruntimeconfig.cache
