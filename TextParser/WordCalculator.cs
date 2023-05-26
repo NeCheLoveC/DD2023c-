@@ -7,7 +7,7 @@ namespace TextParser
 {
     public class WordCalculator
     {
-        public static Dictionary<string, int> Parse(String text)
+        private static Dictionary<string, int> Parse(String text)
         {
             Dictionary<string,int> dictionary = new Dictionary<string, int>();
             Regex regex = new Regex(@"\b\w+\b");

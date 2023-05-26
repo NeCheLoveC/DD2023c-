@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using TextParser;
 using System.Text.RegularExpressions;
@@ -21,7 +22,8 @@ namespace DDConsole
             if (System.IO.File.Exists(fullPathName))
             {
                 String text = File.ReadAllText(fullPathName);
-                Dictionary<String, int> dictionary = WordCalculator.Parse(text);
+                Type type = typeof(WordCalculator); 
+                Dictionary<String, int> dictionary = (Dictionary<String, int>)type.GetMethod("Parse", BindingFlags.NonPublic | BindingFlags.Static).Invoke(null, parameters: new Object[] {(object)text}); ;
                 writeDictionaryIntoFile(dictionary);
             }
             else
