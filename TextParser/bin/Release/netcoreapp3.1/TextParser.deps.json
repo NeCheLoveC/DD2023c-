@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "DDConsole/1.0.0": {
-        "dependencies": {
-          "TextParser": "1.0.0"
-        },
-        "runtime": {
-          "DDConsole.dll": {}
-        }
-      },
       "TextParser/1.0.0": {
         "runtime": {
           "TextParser.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "DDConsole/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "TextParser/1.0.0": {
       "type": "project",
       "serviceable": false,

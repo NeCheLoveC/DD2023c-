@@ -5,9 +5,9 @@ using System.Text.RegularExpressions;
 
 namespace TextParser
 {
-    class WordCalculator
+    public class WordCalculator
     {
-        private static Dictionary<string, int> Parse(String text)
+        public static Dictionary<string, int> Parse(String text)
         {
             Dictionary<string,int> dictionary = new Dictionary<string, int>();
             Regex regex = new Regex(@"\b\w+\b");

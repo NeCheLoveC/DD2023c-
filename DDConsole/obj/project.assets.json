@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "TextParser/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/TextParser.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TextParser.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "TextParser/1.0.0": {
+      "type": "project",
+      "path": "../TextParser/TextParser.csproj",
+      "msbuildProject": "../TextParser/TextParser.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "TextParser >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\prots\\.nuget\\packages\\": {}
@@ -32,7 +51,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\prots\\source\\repos\\DDConsole\\TextParser\\TextParser.csproj": {
+              "projectPath": "C:\\Users\\prots\\source\\repos\\DDConsole\\TextParser\\TextParser.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
