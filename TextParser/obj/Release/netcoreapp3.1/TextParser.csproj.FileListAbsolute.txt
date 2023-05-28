@@ -7,3 +7,4 @@ C:\Users\prots\source\repos\DDConsole\TextParser\obj\Release\netcoreapp3.1\TextP
 C:\Users\prots\source\repos\DDConsole\TextParser\obj\Release\netcoreapp3.1\TextParser.dll
 C:\Users\prots\source\repos\DDConsole\TextParser\obj\Release\netcoreapp3.1\TextParser.pdb
 C:\Users\prots\source\repos\DDConsole\TextParser\obj\Release\netcoreapp3.1\TextParser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prots\source\repos\DDConsole\TextParser\obj\Release\netcoreapp3.1\TextParser.csproj.AssemblyReference.cache
