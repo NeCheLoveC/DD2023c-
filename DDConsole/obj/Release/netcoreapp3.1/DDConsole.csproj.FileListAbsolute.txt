@@ -12,5 +12,6 @@ C:\Users\prots\source\repos\DDConsole\DDConsole\obj\Release\netcoreapp3.1\DDCons
 C:\Users\prots\source\repos\DDConsole\DDConsole\obj\Release\netcoreapp3.1\DDConsole.genruntimeconfig.cache
 C:\Users\prots\source\repos\DDConsole\DDConsole\bin\Release\netcoreapp3.1\TextParser.dll
 C:\Users\prots\source\repos\DDConsole\DDConsole\bin\Release\netcoreapp3.1\TextParser.pdb
-C:\Users\prots\source\repos\DDConsole\DDConsole\obj\Release\netcoreapp3.1\DDConsole.csprojAssemblyReference.cache
 C:\Users\prots\source\repos\DDConsole\DDConsole\obj\Release\netcoreapp3.1\DDConsole.csproj.CopyComplete
+C:\Users\prots\source\repos\DDConsole\DDConsole\obj\Release\netcoreapp3.1\DDConsole.csproj.AssemblyReference.cache
+C:\Users\prots\source\repos\DDConsole\DDConsole\obj\Release\netcoreapp3.1\DDConsole.GeneratedMSBuildEditorConfig.editorconfig
